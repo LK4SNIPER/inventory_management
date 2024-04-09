@@ -27,7 +27,7 @@
 				<tr>
 					<th scope="col">ID</th>
 					<th scope="col">Nombre</th>
-					<th scope="col">Qty</th>
+					<th scope="col">Cantidad</th>
 					<th scope="col">Categoria</th>
 					<th scope="col"></th>
 					<th scope="col"></th>
@@ -55,8 +55,8 @@
 					<td class="text-success">{{ item.quantity }}</td>
 					{% endif %}
 					<td>{{ item.category.name }}</td>
-					<td><a href="{% url 'edit-item' item.id %}" class="btn btn-outline-secondary">Edit</a></td>
-					<td><a href="{% url 'delete-item' item.id %}" class="btn btn-secondary">Delete</a></td>
+					<td><a href="{% url 'edit-item' item.id %}" class="btn btn-outline-secondary">Editar</a></td>
+					<td><a href="{% url 'delete-item' item.id %}" class="btn btn-secondary">Eliminar</a></td>
 				</tr>
 				{% endfor %}
 			</tbody>
